@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  background-color: #fafafa;
+}
+
+body {
+  font-size: 1.6rem; // default font size 16px
+}
+
+#app {
+  height: 100vh;
+  display: grid;
+  grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+  #header {
+    grid-area: header;
+  }
+  #main {
+    grid-area: main;
+  }
+  #footer {
+    grid-area: footer;
+  }
+}

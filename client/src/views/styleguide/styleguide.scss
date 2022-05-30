@@ -1,0 +1,219 @@
+// TABLE OF CONTENT
+//
+// 1. FONT
+// 2. FONT COLORS
+// 3. BACKGROUND-COLOR
+// 3.1 ONE COLOR
+// 3.2 GRADIENT
+// 3.3 HIGHLIGHT
+// 4. OTHER
+
+// *********************
+// 1. FONT
+// *********************
+$primary-font: "Yanone Kaffeesatz", sans-serif;
+$secondary-font: "Josefin Sans", sans-serif;
+.primary-font {
+  font-family: $primary-font;
+}
+.secondary-font {
+  font-family: $primary-font;
+}
+
+// *********************
+// 2. FONT COLORS
+// *********************
+$primary-color: #341f97;
+$primary-color-light: rgba(52, 31, 151, 0.3);
+$secondary-color: #5f27cd;
+$secondary-color-light: rgba(95, 39, 205, 0.3);
+$ternary-color: #2e86de;
+$ternary-color-light: rgba(46, 134, 222, 0.5);
+$quaternary-color: #01a3a4;
+$quaternary-color-light: rgba(1, 163, 164, 0.5);
+$quinary-color: #ee5253;
+$quinary-color-light: rgba(238, 82, 83, 0.5);
+$sinary-color: #f368e0;
+$sinary-color-light: rgba(243, 104, 224, 0.5);
+$gray-color: #8395a7;
+$gray-color-light: rgba(131, 149, 167, 0.5);
+$light-color: #fafafa;
+$dark-color: #222f3e;
+$red-color: #b71540;
+$red-color-light: rgba(183, 21, 64, 0.4);
+$green-color: #009432;
+$green-color-light: rgba(0, 148, 50, 0.4);
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.ternary-color {
+  color: $ternary-color;
+}
+
+.quaternary-color {
+  color: $quaternary-color;
+}
+
+.quinary-color {
+  color: $quinary-color;
+}
+
+.sinary-color {
+  color: $sinary-color;
+}
+
+.gray-color {
+  color: $gray-color;
+}
+
+.dark-color {
+  color: $dark-color;
+}
+
+.light-color {
+  color: $light-color;
+}
+
+.green-color {
+  color: $green-color;
+}
+
+.red-color {
+  color: $red-color;
+}
+// *********************
+// 3. BACKGROUND-COLOR
+// *********************
+// 3.2 ONE COLOR
+// *********************
+.primary-bg-color {
+  background-color: $primary-color;
+}
+
+.secondary-bg-color {
+  background-color: $secondary-color;
+}
+
+.ternary-bg-color {
+  background-color: $ternary-color;
+}
+
+.quaternary-bg-color {
+  background-color: $quaternary-color;
+}
+
+.quinary-bg-color {
+  background-color: $quinary-color;
+}
+
+.sinary-bg-color {
+  background-color: $sinary-color;
+}
+
+.gray-bg-color {
+  background-color: $gray-color;
+}
+
+.dark-bg-color {
+  background-color: $dark-color;
+}
+.green-bg-color {
+  background-color: $green-color;
+}
+.red-bg-color {
+  background-color: $red-color;
+}
+// *********************
+// 3.2 GRADIENT
+// *********************
+.linear-primary-to-secondary {
+  background-image: linear-gradient(
+    to bottom,
+    $primary-color,
+    $secondary-color
+  );
+}
+.linear-secondary-to-primary {
+  background-image: linear-gradient(
+    to bottom,
+    $secondary-color,
+    $primary-color
+  );
+}
+.radial-bg-color {
+  background-image: radial-gradient($secondary-color, $primary-color);
+}
+
+// *********************
+// 3.3 HIGHLIGHT
+// *********************
+.primary-bg-highlight {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    $primary-color-light 50%
+  );
+}
+
+.secondary-bg-highlight {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    $secondary-color-light 50%
+  );
+}
+
+.ternary-bg-highlight {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    $ternary-color-light 50%
+  );
+}
+
+.quaternary-bg-highlight {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    $quaternary-color-light 50%
+  );
+}
+
+.quinary-bg-highlight {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    $quinary-color-light 50%
+  );
+}
+
+.sinary-bg-highlight {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    $sinary-color-light 50%
+  );
+}
+
+.gray-bg-highlight {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    $gray-color-light 50%
+  );
+}
+// *********************
+// 4. OTHER
+// *********************
+$little-border-radius: 4px;
+$medium-border-radius: 8px;
+$large-border-radius: 12px;
+$xlarge-border-radius: 24px;
+
+// ******* IMPORT FOR STYLEGUIDE VIEW ********

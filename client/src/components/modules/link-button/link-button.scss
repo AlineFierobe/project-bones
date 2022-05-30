@@ -1,0 +1,604 @@
+// LINK USED FOR NAVIGATION AND ROUTER
+.link-nav-title {
+  @extend .headline1;
+  color: $light-color;
+}
+// STYLE FOR MAIN NAV BAR
+.link-nav-primary {
+  font-size: 2.2rem;
+  margin: auto 2rem;
+  &:hover {
+    font-style: italic;
+  }
+  &.active {
+    text-transform: uppercase;
+  }
+}
+
+// STYLE FOR TABS NAV
+.link-nav-secondary {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 4px solid transparent;
+  text-transform: capitalize;
+  &:hover,
+  &.isActive {
+    border-bottom: 4px solid $primary-color;
+  }
+}
+
+// GENERIC LINK
+.link-light-bg {
+  color: $dark-color;
+}
+.link-primary {
+  @extend .link-light-bg;
+  display: inline;
+  font-size: 1.6rem;
+  margin: auto;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.tab-nav {
+  border-bottom: 2px solid $gray-color;
+}
+.link-secondary {
+  @extend .link-light-bg;
+  display: inline;
+  margin: auto;
+  font-size: 1.6rem;
+  &:hover {
+    @extend .primary-bg-highlight;
+  }
+}
+
+.link-ternary {
+  @extend .link-light-bg;
+  display: inline;
+  font-weight: 700;
+  text-transform: lowercase;
+  font-size: 1.9rem;
+  line-height: 2rem;
+  border-bottom: 4px solid transparent;
+  padding: 0.5rem 0;
+  margin: auto;
+  &:hover {
+    border-bottom: 4px solid $primary-color;
+  }
+  &.active {
+    border-bottom: 4px solid $primary-color;
+  }
+}
+
+.link-quaternary {
+  @extend .link-light-bg;
+  display: inline;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: auto;
+  text-decoration: underline;
+  font-style: normal;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// FOR DARK BACKGROUND
+.link-dark-bg {
+  color: $light-color;
+}
+.link-dark-primary {
+  @extend .link-dark-bg;
+  display: inline;
+  font-size: 1.6rem;
+  margin: auto;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.link-dark-secondary {
+  @extend .link-dark-bg;
+  display: inline;
+  margin: auto;
+  font-size: 1.6rem;
+  &:hover {
+    @extend .sinary-bg-highlight;
+  }
+}
+.link-dark-ternary {
+  @extend .link-dark-bg;
+  display: inline;
+  font-weight: 700;
+  text-transform: lowercase;
+  font-size: 1.9rem;
+  line-height: 2rem;
+  border-bottom: 4px solid transparent;
+  padding: 0.5rem 0;
+  margin: auto;
+  &:hover {
+    border-bottom: 4px solid $light-color;
+  }
+  &.active {
+    border-bottom: 4px solid $sinary-color;
+  }
+}
+.link-dark-quaternary {
+  @extend .link-dark-bg;
+  display: inline;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: auto;
+  text-decoration: underline;
+  font-style: normal;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// BUTTON
+.btn {
+  display: flex;
+  padding: 2rem;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  transition: linear 300ms;
+  border-radius: $medium-border-radius;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.btn-small {
+  display: flex;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  transition: linear 300ms;
+  font-weight: 300;
+  border-radius: $little-border-radius;
+  text-transform: lowercase;
+  align-items: center;
+}
+.btn-primary {
+  background-color: $primary-color;
+  color: $light-color;
+  &:hover {
+    background-color: $gray-color;
+  }
+}
+// FILLED
+.btn-primary-filled {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+.btn-primary-filled-small {
+  @extend .btn-small;
+  @extend .btn-primary;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  color: $light-color;
+  &:hover {
+    background-color: $gray-color;
+  }
+}
+.btn-secondary-filled {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+.btn-secondary-filled-small {
+  @extend .btn-small;
+  @extend .btn-secondary;
+}
+
+.btn-ternary {
+  background-color: $ternary-color;
+  color: $light-color;
+  &:hover {
+    background-color: $gray-color;
+  }
+}
+.btn-ternary-filled {
+  @extend .btn;
+  @extend .btn-ternary;
+}
+
+.btn-ternary-filled-small {
+  @extend .btn-small;
+  @extend .btn-ternary;
+}
+
+.btn-quaternary {
+  background-color: $quaternary-color;
+  color: $light-color;
+  &:hover {
+    background-color: $gray-color;
+  }
+}
+
+.btn-quaternary-filled {
+  @extend .btn;
+  @extend .btn-quaternary;
+}
+.btn-quaternary-filled-small {
+  @extend .btn-small;
+  @extend .btn-quaternary;
+}
+
+.btn-warning {
+  background-color: $red-color;
+  color: $light-color;
+  &:hover {
+    background-color: $gray-color;
+  }
+}
+.btn-warning-filled {
+  @extend .btn;
+  @extend .btn-warning;
+}
+
+.btn-warning-filled-small {
+  @extend .btn-small;
+  @extend .btn-warning;
+}
+
+.btn-validation {
+  background-color: $green-color;
+  color: $light-color;
+  &:hover {
+    background-color: $gray-color;
+  }
+}
+.btn-validation-filled {
+  @extend .btn;
+  @extend .btn-validation;
+}
+
+.btn-validation-filled-small {
+  @extend .btn-small;
+  @extend .btn-validation;
+}
+
+// OUTLINED
+.btn-primary-o {
+  @extend .btn;
+  background-color: transparent;
+  color: $primary-color;
+  border: 2px solid $primary-color;
+  &:hover {
+    background-color: $primary-color-light;
+    color: $dark-color;
+  }
+}
+.btn-primary-outlined {
+  @extend .btn;
+  @extend .btn-primary-o;
+}
+
+.btn-primary-outlined-small {
+  @extend .btn-small;
+  @extend .btn-primary-o;
+}
+
+.btn-secondary-o {
+  background-color: transparent;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+  &:hover {
+    background-color: $secondary-color-light;
+    color: $dark-color;
+  }
+}
+.btn-secondary-outlined {
+  @extend .btn;
+  @extend .btn-secondary-o;
+}
+
+.btn-secondary-outlined-small {
+  @extend .btn-small;
+  @extend .btn-secondary-o;
+}
+
+.btn-ternary-o {
+  background-color: transparent;
+  color: $ternary-color;
+  border: 2px solid $ternary-color;
+  &:hover {
+    background-color: $ternary-color-light;
+    color: $dark-color;
+  }
+}
+.btn-ternary-outlined {
+  @extend .btn;
+  @extend .btn-ternary-o;
+}
+
+.btn-ternary-outlined-small {
+  @extend .btn-small;
+  @extend .btn-ternary-o;
+}
+
+.btn-quaternary-o {
+  background-color: transparent;
+  color: $quaternary-color;
+  border: 2px solid $quaternary-color;
+  &:hover {
+    background-color: $quaternary-color-light;
+    color: $dark-color;
+  }
+}
+.btn-quaternary-outlined {
+  @extend .btn;
+  @extend .btn-quaternary-o;
+}
+
+.btn-quaternary-outlined-small {
+  @extend .btn-small;
+  @extend .btn-quaternary-o;
+}
+
+.btn-warning-o {
+  background-color: transparent;
+  color: $red-color;
+  border: 2px solid $red-color;
+  &:hover {
+    background-color: $red-color-light;
+    color: $dark-color;
+  }
+}
+.btn-warning-outlined {
+  @extend .btn;
+  @extend .btn-warning-o;
+}
+
+.btn-warning-outlined-small {
+  @extend .btn-small;
+  @extend .btn-warning-o;
+}
+
+.btn-validation-o {
+  background-color: transparent;
+  color: $green-color;
+  border: 2px solid $green-color;
+  &:hover {
+    background-color: $green-color-light;
+    color: $dark-color;
+  }
+}
+
+.btn-validation-outlined {
+  @extend .btn;
+  @extend .btn-validation-o;
+}
+
+.btn-validation-outlined-small {
+  @extend .btn-small;
+  @extend .btn-validation-o;
+}
+
+// BUTTON FOR DARK BACKGROUND
+// FILLED
+.btn-dark-primary {
+  background-color: $primary-color;
+  color: $light-color;
+  &:hover {
+    background-color: $primary-color-light;
+  }
+}
+.btn-dark-primary-filled {
+  @extend .btn;
+  @extend .btn-dark-primary;
+}
+
+.btn-dark-primary-filled-small {
+  @extend .btn-small;
+  @extend .btn-dark-primary;
+}
+
+.btn-dark-secondary {
+  background-color: $secondary-color;
+  color: $light-color;
+  &:hover {
+    background-color: $secondary-color-light;
+  }
+}
+.btn-dark-secondary-filled {
+  @extend .btn;
+  @extend .btn-dark-secondary;
+}
+
+.btn-dark-secondary-filled-small {
+  @extend .btn-small;
+  @extend .btn-dark-secondary;
+}
+
+.btn-dark-ternary {
+  background-color: $ternary-color;
+  color: $light-color;
+  &:hover {
+    background-color: $ternary-color-light;
+  }
+}
+.btn-dark-ternary-filled {
+  @extend .btn;
+  @extend .btn-dark-ternary;
+}
+
+.btn-dark-ternary-filled-small {
+  @extend .btn-small;
+  @extend .btn-dark-ternary;
+}
+
+.btn-dark-quaternary {
+  background-color: $quaternary-color;
+  color: $light-color;
+  &:hover {
+    background-color: $quaternary-color-light;
+  }
+}
+.btn-dark-quaternary-filled {
+  @extend .btn;
+  @extend .btn-dark-quaternary;
+}
+
+.btn-dark-quaternary-filled-small {
+  @extend .btn-small;
+  @extend .btn-dark-quaternary;
+}
+
+.btn-dark-warning {
+  background-color: $red-color;
+  color: $light-color;
+  &:hover {
+    background-color: $red-color-light;
+  }
+}
+.btn-dark-warning-filled {
+  @extend .btn;
+  @extend .btn-dark-warning;
+}
+
+.btn-dark-warning-filled-small {
+  @extend .btn-small;
+  @extend .btn-dark-warning;
+}
+
+.btn-dark-validation {
+  background-color: $green-color;
+  color: $light-color;
+  &:hover {
+    background-color: $green-color-light;
+  }
+}
+.btn-dark-validation-filled {
+  @extend .btn;
+  @extend .btn-dark-validation;
+}
+
+.btn-dark-validation-filled-small {
+  @extend .btn-small;
+  @extend .btn-dark-validation;
+}
+
+// OUTLINED
+.btn-dark-primary-o {
+  background-color: transparent;
+  color: $light-color;
+  border: 2px solid $primary-color;
+  &:hover {
+    background-color: $primary-color-light;
+    color: $light-color;
+  }
+}
+.btn-dark-primary-outlined {
+  @extend .btn;
+  @extend .btn-dark-primary-o;
+}
+
+.btn-dark-primary-outlined-small {
+  @extend .btn-small;
+  @extend .btn-dark-primary-o;
+}
+
+.btn-dark-secondary-o {
+  background-color: transparent;
+  color: $light-color;
+  border: 2px solid $secondary-color;
+  &:hover {
+    background-color: $secondary-color-light;
+    color: $light-color;
+  }
+}
+.btn-dark-secondary-outlined {
+  @extend .btn;
+  @extend .btn-dark-secondary-o;
+}
+
+.btn-dark-secondary-outlined-small {
+  @extend .btn-small;
+  @extend .btn-dark-secondary-o;
+}
+
+.btn-dark-ternary-o {
+  background-color: transparent;
+  color: $light-color;
+  border: 2px solid $ternary-color;
+  &:hover {
+    background-color: $ternary-color-light;
+    color: $light-color;
+  }
+}
+.btn-dark-ternary-outlined {
+  @extend .btn;
+  @extend .btn-dark-ternary-o;
+}
+
+.btn-dark-ternary-outlined-small {
+  @extend .btn-small;
+  @extend .btn-dark-ternary-o;
+}
+
+.btn-dark-quaternary-o {
+  background-color: transparent;
+  color: $light-color;
+  border: 2px solid $quaternary-color;
+  &:hover {
+    background-color: $quaternary-color-light;
+    color: $light-color;
+  }
+}
+.btn-dark-quaternary-outlined {
+  @extend .btn;
+  @extend .btn-dark-quaternary-o;
+}
+
+.btn-dark-quaternary-outlined-small {
+  @extend .btn-small;
+  @extend .btn-dark-quaternary-o;
+}
+
+.btn-dark-warning-o {
+  background-color: transparent;
+  color: $light-color;
+  border: 2px solid $red-color;
+  &:hover {
+    background-color: $red-color-light;
+    color: $light-color;
+  }
+}
+
+.btn-dark-warning-outlined {
+  @extend .btn;
+  @extend .btn-dark-warning-o;
+}
+
+.btn-dark-warning-outlined-small {
+  @extend .btn-small;
+  @extend .btn-dark-warning-o;
+}
+
+.btn-dark-validation-o {
+  background-color: transparent;
+  color: $light-color;
+  border: 2px solid $green-color;
+  &:hover {
+    background-color: $green-color-light;
+    color: $light-color;
+  }
+}
+
+.btn-dark-validation-outlined {
+  @extend .btn;
+  @extend .btn-dark-validation-o;
+}
+
+.btn-dark-validation-outlined-small {
+  @extend .btn-small;
+  @extend .btn-dark-validation-o;
+}

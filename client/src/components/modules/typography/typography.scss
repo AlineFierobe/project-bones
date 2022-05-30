@@ -1,0 +1,165 @@
+// TABLE OF CONTENT
+//
+// 1. TITLE
+// 2. SUBTITLE
+// 3. TEXT
+
+// 1. TITLE
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.headline1,
+.headline2,
+.headline3,
+.headline4 {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+}
+.headline1 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+.headline2 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.headline3 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.headline4 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.headline5,
+.headline6 {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+// 2. SUBTITLE
+.subtitle1,
+.subtitle2 {
+  font-family: $primary-font;
+}
+.subtitle3,
+.subtitle4 {
+  font-family: $secondary-font;
+}
+
+.subtitle1,
+.subtitle3 {
+  font-size: 2rem;
+}
+.subtitle2,
+.subtitle4 {
+  font-size: 1.6rem;
+}
+
+// 3. TEXT
+div,
+span,
+p,
+a {
+  font-family: $secondary-font;
+}
+
+.body {
+  font-weight: 300;
+  text-align: justify;
+}
+.body1 {
+  @extend .body;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.body2 {
+  @extend .body;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.smallprint {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+}
+
+// QUOTE
+.quote {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.primary-border-quote {
+  border-right: 4px solid $primary-color;
+}
+
+.secondary-border-quote {
+  border-right: 4px solid $secondary-color;
+}
+
+.ternary-border-quote {
+  border-right: 4px solid $ternary-color;
+}
+
+.quaternary-border-quote {
+  border-right: 4px solid $quaternary-color;
+}
+
+.quinary-border-quote {
+  border-right: 4px solid $quinary-color;
+}
+
+.sinary-border-quote {
+  border-right: 4px solid $sinary-color;
+}
+
+.dark-border-quote {
+  border-right: 4px solid $dark-color;
+}
+
+.gray-border-quote {
+  border-right: 4px solid $gray-color;
+}
+
+// MESSAGE
+.message {
+  font-weight: 400;
+  padding: 1.5rem;
+  border-radius: $medium-border-radius;
+  margin: 2rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.message-important {
+  @extend .message;
+  background-color: $primary-color-light;
+  color: $primary-color;
+  border: 3px solid $primary-color;
+}
+
+.message-warning {
+  @extend .message;
+  background-color: $red-color-light;
+  color: $red-color;
+  border: 3px solid $red-color;
+}
+
+.message-validation {
+  @extend .message;
+  background-color: $green-color-light;
+  color: $green-color;
+  border: 3px solid $green-color;
+}
