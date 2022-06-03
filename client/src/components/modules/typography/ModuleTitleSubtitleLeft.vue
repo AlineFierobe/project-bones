@@ -1,11 +1,11 @@
 <script lang="ts">
 export default {
-  name: "ModuleTitle",
+  name: "ModuleTitleSubtitleLeft",
 };
 </script>
 
 <script setup lang="ts">
-import BlockContainer from "@/components/block/ComponentBlockContainer.vue";
+import BlockContainerInPage from "@/components/block/ComponentBlockContainerInPage.vue";
 import Typography from "@/components/modules/typography/ModuleTypography.vue";
 
 defineProps<{
@@ -20,18 +20,14 @@ defineProps<{
 </script>
 
 <template>
-  <BlockContainer
-    :is-center="true"
-    :is-section="true"
-    extra-class="text-center mb-10"
-  >
+  <BlockContainerInPage :is-center="false" :is-section="true">
     <Typography
       :tag="tagTitle ? tagTitle : 'h1'"
       :content="title"
       :font-color="titleColor ? titleColor : ''"
-      font-style="headline1"
-      :class="titleBgColor ? 'bg-highlight-' + titleBgColor : ''"
-      extra-class="inline-block mx-auto"
+      font-style="headline2"
+      :class="titleBgColor ? titleBgColor + '-bg-highlight' : ''"
+      extra-class="inline mr-auto"
     />
     <Typography
       v-if="subtitle"
@@ -40,5 +36,5 @@ defineProps<{
       :font-color="subtitleColor ? subtitleColor : ''"
       font-style="subtitle2"
     />
-  </BlockContainer>
+  </BlockContainerInPage>
 </template>

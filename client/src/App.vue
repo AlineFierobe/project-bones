@@ -6,7 +6,6 @@ import MainFooter from "@/components/footer/MainFooter.vue";
 const siteTitle = "Project Bones";
 const devName = "Aowlyne";
 const devLink = "https://www.alinefierobe.com/";
-// mongodb+srv://aowlyne:oGminJ6s-e1M@cluster0.jfuvnvu.mongodb.net/project-bones?retryWrites=true&w=majority
 </script>
 
 <template>

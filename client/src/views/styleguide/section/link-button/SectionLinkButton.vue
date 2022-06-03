@@ -68,11 +68,11 @@ const useContent = `<LinkButton
 <template>
   <!-- ****************************  LINK & BUTTON ***************************** -->
   <!-- HOW TO USE -->
-  <BlockContainer :is-section="true" :is-center="false" bg-color="gray">
+  <BlockContainer :is-section="true" :is-center="false" bg-color="gray-1">
     <Typography
       tag="div"
       content="comment utiliser le module : LinkButton"
-      font-color="dark"
+      font-color="dark-1"
       font-style="headline3"
       extra-class="mb-4"
     />

@@ -5,8 +5,7 @@ export default {
 };
 </script>
 <script setup lang="ts">
-import Page from "@/components/page/ComponentBasicPage.vue";
-import TabLink from "@/components/modules/link-button/ModuleTabLink.vue";
+import PageSubMenu from "@/components/page/ComponentPageSubMenu.vue";
 
 const links = [
   {
@@ -24,18 +23,17 @@ const links = [
   {
     id: "7676jhvj67bdzkjb",
     link: "/styleguide/module",
+    hasChildren: true,
+  },
+  {
+    id: "jjje88nn00jj",
+    link: "/styleguide/form",
   },
 ];
 </script>
 
 <template>
-  <Page
-    title="Styleguide"
-    subtitle="toutes les couleurs, les styles et les modules disponible pour le site"
-  >
-    <div class="styleguide container mx-auto">
-      <TabLink :urls="links" extra-class="styleguide__nav" />
-      <router-view></router-view>
-    </div>
-  </Page>
+  <PageSubMenu title="Styleguide" :urls="links">
+    <router-view></router-view>
+  </PageSubMenu>
 </template>

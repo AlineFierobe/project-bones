@@ -1,24 +1,29 @@
 <script lang="ts">
 export default {
-  name: "ModuleTabLink",
+  name: "ModuleTitleTabLink",
 };
 </script>
 
 <script setup lang="ts">
+import Typography from "@/components/modules/typography/ModuleTypography.vue";
 defineProps<{
-  urls: Array<{
-    id: string;
-    name?: string;
-    link: string;
-    hasChildren?: boolean;
-  }>;
+  title: string;
+  urls: Array<{ id: string; link: string; hasChildren?: boolean }>;
   linkStyle?: string;
-  extraClass?: string;
+  extraClass?: string | Array<string>;
 }>();
 </script>
 
 <template>
-  <nav :class="[extraClass ? extraClass : '', 'inline', 'flex', 'gap-20']">
+  <nav
+    :class="[
+      linkStyle == 'secondary' ? 'tab-nav' : '',
+      extraClass ? extraClass : '',
+      'flex',
+      'gap-20',
+    ]"
+  >
+    <Typography :content="title" tag="h1" font-style="headline1" />
     <router-link
       v-for="url in urls"
       :key="url.id"
@@ -34,7 +39,7 @@ defineProps<{
           url.hasChildren && isActive ? 'isActive' : '',
           isExactActive ? 'isActive' : '',
         ]"
-        >{{ url.name ? url.name : route.name }}</a
+        >{{ route.name }}</a
       >
     </router-link>
   </nav>

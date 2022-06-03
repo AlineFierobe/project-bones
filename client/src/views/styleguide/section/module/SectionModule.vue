@@ -124,15 +124,15 @@ const modules = [
 const links = [
   {
     id: "1",
-    link: "/link1",
+    link: "/styleguide/module/link1",
   },
   {
     id: "2",
-    link: "/link2",
+    link: "/styleguide/module/link2",
   },
   {
     id: "3",
-    link: "/link3",
+    link: "/styleguide/module/link3",
   },
 ];
 </script>
@@ -143,24 +143,24 @@ const links = [
   <!-- MODULE ACCORDION -->
   <!-- HOW TO USE  -->
 
-  <BlockContainer :is-section="true" :is-center="false" bg-color="gray">
+  <BlockContainer :is-section="true" :is-center="false" bg-color="gray-1">
     <div v-for="item in modules" :key="item.id">
       <Typography
         tag="div"
         :content="'comment utiliser le module : ' + item.name"
-        font-color="dark"
+        font-color="dark-1"
         font-style="headline3"
-        extra-class="mt-9 mb-4"
+        extra-class="mb-4"
       />
       <Typography tag="div" :content="item.import" />
-      <Typography tag="div" :content="item.use" />
+      <Typography tag="div" :content="item.use" extra-class="mb-9" />
     </div>
   </BlockContainer>
 
   <!-- DEMO MODULE TABLINK -->
-  <TabLink :urls="links" />
-  <!-- <BlockContainer :is-section="true" :is-center="false">
-  </BlockContainer> -->
+  <BlockContainer :is-section="true" :is-center="false">
+    <TabLink :urls="links" />
+  </BlockContainer>
 
   <!-- DEMO MODULE ACCORDION -->
   <BlockContainer

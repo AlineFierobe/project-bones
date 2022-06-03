@@ -10,6 +10,33 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: "/admin",
+      name: "Admin",
+      component: () => import("@/views/admin/ViewAdmin.vue"),
+      children: [
+        {
+          path: "/admin",
+          name: "Dashboard",
+          component: () => import("@/views/admin/section/admin-overview/SectionOverview.vue"),
+        },
+        {
+          path: "/config",
+          name: "Config",
+          component: () => import("@/views/admin/section/config/SectionConfig.vue"),
+        },
+        {
+          path: "/crud-lorem",
+          name: "Lorem",
+          component: () => import("@/views/admin/section/crud-lorem/SectionCrudLorem.vue"),
+        },
+        {
+          path: "/azerty",
+          name: "Forms",
+          component: () => import("@/views/admin/section/form-crud/SectionFormCrud.vue"),
+        },
+      ]
+    },
+    {
       path: "/404",
       name: "OUPS",
       component: () => import("@/views/404/404.vue"),
@@ -17,18 +44,12 @@ const router = createRouter({
     {
       path: "/view-type",
       name: "Page Type",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("@/views/view-type/ViewType.vue"),
     },
     // STYLEGUIDE
     {
       path: "/styleguide",
       name: "Styleguide",
-      // route level code-splitting
-      // this generates a separate chunk (Styleguide.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("@/views/styleguide/ViewStyleguide.vue"),
       // ALL THE CHILDREN PATH IN STYLEGUIDE VIEW
       children: [
@@ -57,6 +78,13 @@ const router = createRouter({
           component: () =>
             import("@/views/styleguide/section/color/SectionColor.vue"),
         },
+        // FORM
+        {
+          path: "/styleguide/form",
+          name: "Formulaires",
+          component: () =>
+            import("@/views/styleguide/section/form/SectionForm.vue"),
+        },
         // MODULE
         {
           path: "/styleguide/module",
@@ -65,17 +93,17 @@ const router = createRouter({
             import("@/views/styleguide/section/module/SectionModule.vue"),
           children: [
             {
-              path: "/link1",
+              path: "/styleguide/module/link1",
               name: "Tab 1",
               component: () => import("@/views/404/404.vue"),
             },
             {
-              path: "/link2",
+              path: "/styleguide/module/link2",
               name: "Tab 2",
               component: () => import("@/views/404/404.vue"),
             },
             {
-              path: "/link3",
+              path: "/styleguide/module/link3",
               name: "Tab 3",
               component: () => import("@/views/404/404.vue"),
             },

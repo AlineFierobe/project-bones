@@ -152,11 +152,11 @@ const myModules = [
 <template>
   <!-- ****************************  SECTION TYPOGRAPHY ***************************** -->
   <!-- HOW TO USE -->
-  <BlockContainer :is-section="true" :is-center="false" bg-color="gray">
+  <BlockContainer :is-section="true" :is-center="false" bg-color="gray-1">
     <Typography
       tag="div"
       content="les polices disponibles"
-      font-color="dark"
+      font-color="dark-1"
       font-style="headline3"
       extra-class="mb-4"
     />
@@ -172,7 +172,7 @@ const myModules = [
       <Typography
         tag="div"
         :content="'comment utiliser le module : ' + item.name"
-        font-color="dark"
+        font-color="dark-1"
         font-style="headline3"
         extra-class="mt-9 mb-4"
       />
@@ -185,18 +185,18 @@ const myModules = [
   <BlockContainer
     :is-center="false"
     :is-section="true"
-    extra-class="grid md:grid-cols-2 py-14"
+    extra-class="grid md:grid-cols-2"
   >
     <div v-for="item in typo" :key="item.id" class="m-5">
       <Typography tag="div" :content="item.name" :font-style="item.name" />
       <Typography tag="div" :content="item.content" :font-style="item.name" />
     </div>
-    <Quote border-color="gray">
+    <Quote border-color="primary">
       <Typography
         tag="div"
         content="quote"
         font-style="subtitle3"
-        font-color="gray"
+        font-color="primary-1"
       />
       <Typography tag="div" :content="typo[10].content" font-style="quote" />
     </Quote>

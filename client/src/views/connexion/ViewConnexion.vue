@@ -1,7 +1,7 @@
 <script lang="ts">
 export default {
-  name: "ViewRegister",
-  title: "Inscription",
+  name: "ViewConnexion",
+  title: "Connexion",
 };
 </script>
 <script setup lang="ts">
@@ -11,5 +11,5 @@ import Page from "@/components/page/ComponentPage.vue";
 </script>
 
 <template>
-  <Page title="Inscription">test</Page>
+  <Page title="Connexion"> mon formulaire de connexion ici </Page>
 </template>

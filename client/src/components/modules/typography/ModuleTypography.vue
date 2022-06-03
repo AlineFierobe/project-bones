@@ -20,8 +20,8 @@ defineProps<{
     :is="tag ? tag : 'span'"
     :class="[
       fontStyle ? fontStyle : 'body1',
-      fontColor ? fontColor + '-color' : 'dark-color',
-      bgColor ? bgColor + '-bg-highlight inline justify-self-start' : '',
+      fontColor ? fontColor : 'dark-2',
+      bgColor ? 'bg-highlight-' + bgColor + ' inline justify-self-start' : '',
       extraClass ? extraClass : '',
     ]"
   >

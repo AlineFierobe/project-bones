@@ -1,6 +1,6 @@
 <script lang="ts">
 export default {
-  name: "ModuleTabLink",
+  name: "ModuleTabLinkVertical",
 };
 </script>
 
@@ -12,13 +12,20 @@ defineProps<{
     link: string;
     hasChildren?: boolean;
   }>;
-  linkStyle?: string;
   extraClass?: string;
 }>();
 </script>
 
 <template>
-  <nav :class="[extraClass ? extraClass : '', 'inline', 'flex', 'gap-20']">
+  <nav
+    :class="[
+      extraClass ? extraClass : '',
+      'inline',
+      'flex',
+      'flex-col',
+      'gap-10',
+    ]"
+  >
     <router-link
       v-for="url in urls"
       :key="url.id"
@@ -30,7 +37,7 @@ defineProps<{
         :href="href"
         @click="navigate"
         :class="[
-          linkStyle ? 'link-nav-' + linkStyle : 'link-nav-primary',
+          'link-nav-vertical',
           url.hasChildren && isActive ? 'isActive' : '',
           isExactActive ? 'isActive' : '',
         ]"

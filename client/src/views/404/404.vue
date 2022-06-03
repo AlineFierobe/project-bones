@@ -6,7 +6,7 @@ export default {
 </script>
 
 <script setup lang="ts">
-import Page from "@/components/page/ComponentBasicPage.vue";
+import Page from "@/components/page/ComponentPage.vue";
 </script>
 <template>
   <Page title="Oups" subtitle="mauvaise direction"> </Page>

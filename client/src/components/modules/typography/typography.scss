@@ -74,6 +74,7 @@ a {
 .body {
   font-weight: 300;
   text-align: justify;
+  white-space: pre-line;
 }
 .body1 {
   @extend .body;
@@ -103,35 +104,19 @@ a {
 }
 
 .primary-border-quote {
-  border-right: 4px solid $primary-color;
+  border-right: 4px solid $primary-color-1;
 }
 
 .secondary-border-quote {
-  border-right: 4px solid $secondary-color;
-}
-
-.ternary-border-quote {
-  border-right: 4px solid $ternary-color;
-}
-
-.quaternary-border-quote {
-  border-right: 4px solid $quaternary-color;
-}
-
-.quinary-border-quote {
-  border-right: 4px solid $quinary-color;
-}
-
-.sinary-border-quote {
-  border-right: 4px solid $sinary-color;
+  border-right: 4px solid $secondary-color-2;
 }
 
 .dark-border-quote {
-  border-right: 4px solid $dark-color;
+  border-right: 4px solid $dark-color-1;
 }
 
 .gray-border-quote {
-  border-right: 4px solid $gray-color;
+  border-right: 4px solid $gray-color-1;
 }
 
 // MESSAGE
@@ -145,21 +130,21 @@ a {
 }
 .message-important {
   @extend .message;
-  background-color: $primary-color-light;
-  color: $primary-color;
-  border: 3px solid $primary-color;
+  background-color: $primary-color-light-1;
+  color: $primary-color-1;
+  border: 3px solid $primary-color-1;
 }
 
 .message-warning {
   @extend .message;
-  background-color: $red-color-light;
-  color: $red-color;
-  border: 3px solid $red-color;
+  background-color: $special-color-light-1;
+  color: $special-color-1;
+  border: 3px solid $special-color-1;
 }
 
 .message-validation {
   @extend .message;
-  background-color: $green-color-light;
-  color: $green-color;
-  border: 3px solid $green-color;
+  background-color: $special-color-light-2;
+  color: $special-color-2;
+  border: 3px solid $special-color-2;
 }

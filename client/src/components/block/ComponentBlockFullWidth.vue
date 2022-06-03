@@ -17,7 +17,7 @@ defineProps<{
       'grid',
       'grid-cols-1',
       'block-full-width',
-      bgColor ? bgColor + '-bg-color p-10' : '',
+      bgColor ? 'bg-' + bgColor + ' p-10' : '',
       extraClass ? extraClass : '',
     ]"
   >

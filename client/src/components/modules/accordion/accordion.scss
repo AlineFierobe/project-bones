@@ -1,83 +1,44 @@
 .accordion {
   &.wrapper-border-primary {
-    border-bottom: $primary-color 1px solid;
+    border-bottom: $primary-color-1 1px solid;
   }
   &.wrapper-border-secondary {
-    border-bottom: $secondary-color 1px solid;
-  }
-  &.wrapper-border-ternary {
-    border-bottom: $ternary-color 1px solid;
-  }
-  &.wrapper-border-quaternary {
-    border-bottom: $quaternary-color 1px solid;
-  }
-  &.wrapper-border-quinary {
-    border-bottom: $quinary-color 1px solid;
-  }
-  &.wrapper-border-sinary {
-    border-bottom: $sinary-color 1px solid;
+    border-bottom: $secondary-color-1 1px solid;
   }
   &.wrapper-border-gray {
-    border-bottom: $gray-color 1px solid;
-  }
-  &.wrapper-border-gray {
-    border-bottom: $gray-color 1px solid;
+    border-bottom: $gray-color-1 1px solid;
   }
   &.wrapper-border-dark {
-    border-bottom: $dark-color 1px solid;
+    border-bottom: $dark-color-1 1px solid;
   }
   .icon-color-primary {
-    color: $primary-color;
+    color: $primary-color-1;
     &.active {
-      color: $gray-color;
+      color: $gray-color-1;
     }
   }
   .icon-color-secondary {
-    color: $secondary-color;
+    color: $secondary-color-1;
     &.active {
-      color: $gray-color;
-    }
-  }
-  .icon-color-ternary {
-    color: $ternary-color;
-    &.active {
-      color: $gray-color;
-    }
-  }
-  .icon-color-quaternary {
-    color: $quaternary-color;
-    &.active {
-      color: $gray-color;
-    }
-  }
-  .icon-color-quinary {
-    color: $quinary-color;
-    &.active {
-      color: $gray-color;
-    }
-  }
-  .icon-color-sinary {
-    color: $sinary-color;
-    &.active {
-      color: $gray-color;
+      color: $gray-color-1;
     }
   }
   .icon-color-gray {
-    color: $gray-color;
+    color: $gray-color-1;
     &.active {
-      color: $ternary-color;
+      color: $primary-color-1;
     }
   }
   .icon-color-dark {
-    color: $dark-color;
+    color: $dark-color-1;
     &.active {
-      color: $primary-color;
+      color: $gray-color-1;
     }
   }
   .icon-color-light {
-    color: $light-color;
+    color: $light-color-1;
     &.active {
-      color: $sinary-color;
+      color: $gray-color-1;
     }
   }
 

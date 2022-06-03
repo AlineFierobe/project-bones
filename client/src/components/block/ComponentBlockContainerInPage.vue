@@ -1,6 +1,6 @@
 <script lang="ts">
 export default {
-  name: "ComponentBlockContainer",
+  name: "ComponentBlockContainerInPage",
 };
 </script>
 
@@ -10,7 +10,6 @@ defineProps<{
   isCenter?: boolean;
   bgColor?: string;
   extraClass?: string | Array<string>;
-  hasTabLeft?: boolean;
 }>();
 </script>
 
@@ -22,7 +21,6 @@ defineProps<{
       'grid',
       'mx-auto',
       'grid-cols-1',
-      hasTabLeft ? 'py-9' : 'my-9',
       isCenter ? 'justify-center text-center' : 'justify-start',
       bgColor ? 'bg-' + bgColor + ' p-10' : '',
       extraClass ? extraClass : '',

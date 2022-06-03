@@ -6,7 +6,7 @@ export default {
 </script>
 <script setup lang="ts">
 import Accordion from "@/components/modules/accordion/ModuleAccordion.vue";
-import Page from "@/components/page/ComponentBasicPage.vue";
+import Page from "@/components/page/ComponentPage.vue";
 import BlockContainer from "@/components/block/ComponentBlockContainer.vue";
 import Typography from "../../components/modules/typography/ModuleTypography.vue";
 
@@ -36,7 +36,11 @@ const modelePage = `<Page title="texte du h1" subtitle="Sous-titre si besoin (fa
 // CONTENU DE LA PAGE ICI
 // LA COULEUR, LES STYLES DU TITRE, DU SOUS-TITRE ET LE SOULIGNEMENT SONT AUTOMATISÉS DANS LE COMPONENT POUR TOUTES LES PAGES UTILISANT CE MODÈLE
 
+ Nullam dignissim tempus eros quis auctor. Etiam aliquam vel elit a varius. Sed aliquam lectus in porta tincidunt. Curabitur quis. Donec ultricies erat id arcu euismod, non elementum odio viverra. Sed et felis nulla. Etiam sem turpis, mollis nec viverra in, luctus eget mauris.
+
 </Page>`;
+
+const otherPage = `<strong>consequat libero.</strong>`;
 </script>
 
 <template>
@@ -52,9 +56,21 @@ const modelePage = `<Page title="texte du h1" subtitle="Sous-titre si besoin (fa
       />
       <Typography
         tag="div"
-        content='import Page from "@/components/page/ComponentBasicPage.vue";'
+        content='import Page from "@/components/page/ComponentPage.vue";'
       />
-      <Typography tag="div" :content="modelePage" />
+      <Typography
+        tag="div"
+        font-style="body1"
+        :content="modelePage"
+        extra-class="prose"
+      />
+
+      <Typography
+        tag="div"
+        font-style="body1"
+        :content="otherPage"
+        extra-class="whitespace-pre-line"
+      />
     </BlockContainer>
 
     <!-- FAQ  -->
